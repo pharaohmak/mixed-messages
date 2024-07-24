@@ -24,4 +24,6 @@ for (let element in suspectedElements) {
     }
 }
 
-console.log(accusation.join(' '));
+document.getElementById('generateMessage').addEventListener('click', () => {
+    document.getElementById('result').innerText = accusation.join(' ');
+});
